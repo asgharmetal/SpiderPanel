@@ -1,0 +1,30 @@
+Xray 26.3.27 (Xray, Penetrates Everything.) d2758a0 (go1.26.1 linux/amd64)
+A unified platform for anti-censorship.
+2026/10/23 22:38:12.080322 [Info] infra/conf/serial: Reading config: &{Name:/app/xray/config.json Format:json}
+2026/10/23 22:38:12.081437 [Warning] infra/conf: REALITY: Listening on non-443 ports may get your IP blocked by the GFW
+2026/10/23 22:38:12.082587 [Warning] core: Xray 26.3.27 started
+Xray 26.3.27 (Xray, Penetrates Everything.) d2758a0 (go1.26.1 linux/amd64)
+A unified platform for anti-censorship.
+2026/10/23 22:38:53.990811 [Info] infra/conf/serial: Reading config: &{Name:/app/xray/config.json Format:json}
+2026/10/23 22:38:53.992607 [Warning] infra/conf: REALITY: Listening on non-443 ports may get your IP blocked by the GFW
+2026/10/23 22:38:53.995755 [Warning] core: Xray 26.3.27 started
+Xray 26.3.27 (Xray, Penetrates Everything.) d2758a0 (go1.26.1 linux/amd64)
+A unified platform for anti-censorship.
+2026/10/23 22:39:00.330821 [Info] infra/conf/serial: Reading config: &{Name:/app/xray/config.json Format:json}
+2026/10/23 22:39:00.332550 [Warning] infra/conf: REALITY: Listening on non-443 ports may get your IP blocked by the GFW
+2026/10/23 22:39:00.334245 [Warning] core: Xray 26.3.27 started
+Xray 26.3.27 (Xray, Penetrates Everything.) d2758a0 (go1.26.1 linux/amd64)
+A unified platform for anti-censorship.
+2026/10/23 22:39:04.679659 [Info] infra/conf/serial: Reading config: &{Name:/app/xray/config.json Format:json}
+2026/10/23 22:39:04.680753 [Warning] infra/conf: REALITY: Listening on non-443 ports may get your IP blocked by the GFW
+2026/10/23 22:39:04.682196 [Warning] core: Xray 26.3.27 started
+Xray 26.3.27 (Xray, Penetrates Everything.) d2758a0 (go1.26.1 linux/amd64)
+A unified platform for anti-censorship.
+2026/10/23 22:40:09.083009 [Info] infra/conf/serial: Reading config: &{Name:/app/xray/config.json Format:json}
+2026/10/23 22:40:09.084135 [Warning] infra/conf: REALITY: Listening on non-443 ports may get your IP blocked by the GFW
+2026/10/23 22:40:09.085434 [Warning] core: Xray 26.3.27 started
+Xray 26.3.27 (Xray, Penetrates Everything.) d2758a0 (go1.26.1 linux/amd64)
+A unified platform for anti-censorship.
+2026/10/23 22:40:21.844550 [Info] infra/conf/serial: Reading config: &{Name:/app/xray/config.json Format:json}
+2026/10/23 22:40:21.846540 [Warning] infra/conf: REALITY: Listening on non-443 ports may get your IP blocked by the GFW
+2026/10/23 22:40:21.848452 [Warning] core: Xray 26.3.27 started

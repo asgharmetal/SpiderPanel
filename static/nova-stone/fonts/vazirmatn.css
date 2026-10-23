@@ -1,0 +1,31 @@
+/* Vazirmatn Persian Font — imported locally for WordPress portability.
+   Only the 4 weights used by the site are bundled (Regular, Medium, SemiBold, Bold).
+   Source: https://github.com/rastikerdar/vazirmatn (v33.003, OFL-1.1 license) */
+@font-face {
+  font-family: Vazirmatn;
+  src: url('webfonts/Vazirmatn-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Vazirmatn;
+  src: url('webfonts/Vazirmatn-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Vazirmatn;
+  src: url('webfonts/Vazirmatn-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Vazirmatn;
+  src: url('webfonts/Vazirmatn-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

@@ -3079,8 +3079,12 @@ async def deployment_ui_fixes(request: Request, call_next):
     except Exception as exc:
         logger.debug("Request public-endpoint discovery failed: %s", exc)
 
-    if request.url.path == "/":
-        return RedirectResponse("/spider", status_code=307)
+    # Nova Stone website routes — serve without SpiderPanel UI injections.
+    _path = request.url.path
+    _NOVA_PATHS = {"/", "/about", "/contact", "/products"}
+    if _path in _NOVA_PATHS or _path.startswith("/products/"):
+        return await call_next(request)
+
     response = await call_next(request)
     content_type = response.headers.get("content-type", "")
     if "text/html" not in content_type:
@@ -3344,7 +3348,8 @@ TGProxy = MTProtoProxyServer
 
 @app.get("/")
 async def root():
-    return {"service": "Spider Gateway", "version": "10.1", "status": "active"}
+    """Nova Stone homepage — serves the static stone decoration website."""
+    return FileResponse(_os.path.join(_STATIC_DIR, "nova-stone", "index.html"))
 
 
 @app.get("/healthz")
@@ -6081,6 +6086,26 @@ async def spider_panel(request: Request):
 @app.get("/test-ws", response_class=HTMLResponse)
 async def test_ws_redirect():
     return HTMLResponse(content="<script>location.href='/spider'</script>")
+
+
+# ── Nova Stone website routes ───────────────────────────────────────────────
+_NOVA_DIR = _os.path.join(_STATIC_DIR, "nova-stone")
+
+@app.get("/about", response_class=HTMLResponse)
+async def nova_about():
+    return FileResponse(_os.path.join(_NOVA_DIR, "about.html"))
+
+@app.get("/contact", response_class=HTMLResponse)
+async def nova_contact():
+    return FileResponse(_os.path.join(_NOVA_DIR, "contact.html"))
+
+@app.get("/products", response_class=HTMLResponse)
+async def nova_products():
+    return FileResponse(_os.path.join(_NOVA_DIR, "products.html"))
+
+@app.get("/products/{category}", response_class=HTMLResponse)
+async def nova_product_detail(category: str):
+    return FileResponse(_os.path.join(_NOVA_DIR, "product-detail.html"))
 
 
 # ══════════════════════════════════════════════════════════════════════════════
